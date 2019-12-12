@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+html {
+  overflow: hidden;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.distances {
+  fill: none;
+  stroke: #888;
+  stroke-width: 0.5;
+  stroke-dasharray: 5 5;
+}
+
+.distlablines {
+  stroke: #888;
+  stroke-width: 0.5;
+  stroke-dasharray: 5 5;
+}
+
+.sun {
+  fill: #fdb813;
+}
+/* 
+.sunring {
+  fill: none;
+  stroke: #4b8b3b;
+  stroke-dasharray: 3 2;
+  stroke-width: 2px;
+} */
+
+.galaxy svg g {
+  fill: white; 
+  opacity: 0.4;
+}
+
+.habitable {
+  fill: none;
+  stroke: #4b8b3b;
+  stroke-dasharray: 3 2;
+  stroke-width: 5px;
+}
+
+.habitablish {
+  fill: none;
+  stroke: #4b8b3b;
+  stroke-dasharray: 1.5 3.5;
+  stroke-width: 5px;
+}
+
+.label {
+  fill: #ccc;
+  font-family: 'Source Sans Pro', 'Arial';
+  font-size: 12px;
+  text-anchor: middle;
+}
+
+.label tspan {
+  fill: #ccc;
+  font-family: 'Source Sans Pro';
+  font-size: 12px;
+  text-anchor: middle;
+}

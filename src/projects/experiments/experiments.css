@@ -1,0 +1,28 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 45px 0;
+}
+
+.flex {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 412px);
+  grid-template-rows: 412px;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+.svg {
+  border: 0.5px solid #aaa;
+  padding: 5px;
+}
+
+/* Beeswarm */
+.bee {
+  stroke: black;
+  stroke-width: 0.5px;
+}

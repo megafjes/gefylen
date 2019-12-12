@@ -1,0 +1,32 @@
+.line {
+  stroke-width: 2px;
+  stroke: black;
+  fill: none;
+}
+
+.layer {
+  stroke-width: 0.5;
+  /* fill: url(#ageGradient);  */
+}
+
+.timeline {
+  stroke: #666;
+  stroke-width: 1;
+  opacity: 1;
+}
+
+.label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+}
+
+.stack-label {
+  
+}
+/* .stop-start {
+  stop-color: #009688;
+}
+
+.stop-end {
+  stop-color: #3f51b5;
+} */

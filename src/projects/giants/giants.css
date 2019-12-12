@@ -1,0 +1,30 @@
+html {
+  overflow: hidden;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+}
+
+svg {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.map {
+  fill: rgb(187, 204, 177);
+}
+
+.border {
+  fill: none;
+  stroke: gray;
+  stroke-width: 0.5px;
+}
