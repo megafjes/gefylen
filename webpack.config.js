@@ -8,8 +8,7 @@ module.exports = {
     main: './src/main/index.js',
     giants: './src/projects/giants/giants.js',
     experiments: './src/projects/experiments/experiments.js',
-    starmap: './src/challenge/1/starmap.js',
-    hive: './src/challenge/4/hive.js',
+    starmap: './src/projects/starmap/starmap.js',
     studentflow: './src/projects/studentflow/studentflow.js'
     //hap: './src/projects/hap/hap.js'
   },
@@ -20,8 +19,10 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Gefylen',
-      chunks: ['main']
+      template: './src/main/index.html',
+      inject: true,
+      chunks: ['main'],
+      filename: 'index.html'
     }),
     new HtmlWebpackPlugin({
       title: 'The greatest ape',
@@ -37,11 +38,6 @@ module.exports = {
       title: 'Starmap',
       chunks: ['starmap'],
       filename: '30daymapchallenge/1/index.html'
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Hive',
-      chunks: ['hive'],
-      filename: '30daymapchallenge/4/index.html'
     }),
     new HtmlWebpackPlugin({
       title: 'Student flow',
