@@ -37,7 +37,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Starmap',
       chunks: ['starmap'],
-      filename: '30daymapchallenge/1/index.html'
+      filename: 'starmap/index.html'
     }),
     new HtmlWebpackPlugin({
       title: 'Student flow',
