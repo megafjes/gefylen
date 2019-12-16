@@ -70,25 +70,29 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
+        exclude: /node_modules/,
+        loader: 'style-loader!css-loader'
       },
       {
         test: /\.(png|jpg|jpeg|gif)$/,
+        exclude: /node_modules/,
         use: [
           'file-loader'
         ]
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: [
-          'url-loader'
-        ]
+        exclude: /node_modules/,
+        loader: 'url-loader',
+        // options: {
+        //   publicPath: './fonts/',
+        //   name: "../fonts/[name].[ext]",
+        //   limit: 1000
+        // }
       },
       {
         test: /\.(csv|tsv)$/,
+        exclude: /node_modules/,
         loader: 'csv-loader',
         options: {
           dynamicTyping: true,
@@ -98,12 +102,14 @@ module.exports = {
       },
       {
         test: /\.xml$/,
+        exclude: /node_modules/,
         use: [
           'xml-loader',
         ],
       },
       {
         test: /\.svg$/,
+        exclude: /node_modules/,
         use: [
           'svg-inline-loader'
         ]
