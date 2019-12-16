@@ -20,6 +20,7 @@
     "preload-webpack-plugin": "^2.3.0",
     "style-loader": "^0.23.1",
     "svg-inline-loader": "^0.8.0",
+    "url-loader": "^3.0.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0",

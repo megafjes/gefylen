@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const PreloadWebpackPlugin = require('preload-webpack-plugin');
+// const PreloadWebpackPlugin = require('preload-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
@@ -50,7 +50,15 @@ module.exports = {
     //   chunks: ['hap'],
     //   filename: 'hap/index.html'
     // })
-    new PreloadWebpackPlugin()
+    // new PreloadWebpackPlugin({
+    //   rel: 'preload',
+    //   as(entry) {
+    //     if (/\.css$/.test(entry)) return 'style';
+    //     if (/\.(woff|woff2|eot|ttf|otf)$/.test(entry)) return 'font';
+    //     if (/\.(png|jpg|jpeg|gif)$/.test(entry)) return 'image';
+    //     return 'script';
+    //   }
+    // })
   ],
   output: {
     filename: '[name].js',
@@ -74,7 +82,7 @@ module.exports = {
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: [
-          'file-loader'
+          'url-loader'
         ]
       },
       {
