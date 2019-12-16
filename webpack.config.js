@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const PreloadWebpackPlugin = require('preload-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -58,7 +59,8 @@ module.exports = {
     //     if (/\.(png|jpg|jpeg|gif)$/.test(entry)) return 'image';
     //     return 'script';
     //   }
-    // })
+    // }),
+    new FaviconsWebpackPlugin()
   ],
   output: {
     filename: '[name].js',
