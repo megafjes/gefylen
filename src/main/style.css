@@ -13,8 +13,10 @@
   src: url('../fonts/Lexend_Exa/LexendExa-Regular.ttf')
 }
 
+@import url('https://fonts.googleapis.com/css?family=Lexend+Exa&display=swap');
+
 body {
-  font-family: 'Avenir', sans-serif;
+  font-family: 'Lexend Exa', sans-serif;
   margin: 0;
 }
 
@@ -40,7 +42,7 @@ header {
 header h1 {
   font-size: 73px;
   margin: 30px 0 20px;
-  font-family: 'Lexend', sans-serif;
+  font-family: 'Lexend Exa', sans-serif;
   font-weight: unset;
   text-align: center;
   color: rgb(23, 29, 32);
