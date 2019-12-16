@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: 'Avenir';
+  font-family: 'Avenir', sans-serif;
   margin: 0;
 }
 
@@ -40,7 +40,7 @@ header {
 header h1 {
   font-size: 73px;
   margin: 30px 0 20px;
-  font-family: 'Lexend';
+  font-family: 'Lexend', sans-serif;
   font-weight: unset;
   text-align: center;
   color: rgb(23, 29, 32);

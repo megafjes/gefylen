@@ -60,7 +60,7 @@ module.exports = {
     //     return 'script';
     //   }
     // }),
-    new FaviconsWebpackPlugin()
+    new FaviconsWebpackPlugin('src/logo.png')
   ],
   output: {
     filename: '[name].js',
