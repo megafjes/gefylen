@@ -5,7 +5,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 
 module.exports = {
-  mode: 'development',
   entry: {
     main: './src/main/index.js',
     giants: './src/projects/giants/giants.js',
@@ -13,10 +12,6 @@ module.exports = {
     starmap: './src/projects/starmap/starmap.js',
     studentflow: './src/projects/studentflow/studentflow.js'
     //hap: './src/projects/hap/hap.js'
-  },
-  devtool: 'inline-source-map',
-  devServer: {
-    contentBase: './dist'
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -60,7 +55,7 @@ module.exports = {
     //     return 'script';
     //   }
     // }),
-    new FaviconsWebpackPlugin('src/logo.png')
+    new FaviconsWebpackPlugin()
   ],
   output: {
     filename: '[name].js',
