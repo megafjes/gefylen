@@ -41,3 +41,9 @@ jspm_packages/
 
 # Ignore all local history of files
 .history
+
+# From sapper template
+.DS_Store
+/src/node_modules/@sapper/
+/cypress/screenshots/
+/__sapper__/

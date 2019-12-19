@@ -1,0 +1,22 @@
+@font-face {
+	font-family: 'Source';
+	src: url('fonts/Source/SourceSansPro-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('fonts/Avenir/AvenirLTStd-Roman.otf')
+}
+
+@font-face {
+	font-family: 'Lexend';
+	src: url('fonts/Lexend_Exa/LexendExa-Regular.ttf')
+}
+
+html {
+	font-family: "Avenir", sans-serif;
+}
+
+body {
+	margin: 0;
+}
