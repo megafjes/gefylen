@@ -1,5 +1,4 @@
 <script>
-
 </script>
 
 <style>
@@ -125,7 +124,9 @@
 			<span class="description">Student flow analytics</span>
 		</div>
 		<div class="grid-item">
+			<a href="/starmap">
 				<img src="starmap320.png" />
+			</a>
 			<span class="description">Habitable planets within 100 light-years</span>
 		</div>
 		<div class="grid-item">
